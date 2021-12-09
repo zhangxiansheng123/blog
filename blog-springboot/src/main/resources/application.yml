@@ -47,7 +47,7 @@ spring:
   mail:
     host: smtp.qq.com
     username: 1073371266@qq.com
-    password: 767743430zhang
+    password: nfpruetyefrdbdfb
     default-encoding: UTF-8
     port: 587
     properties:
@@ -78,7 +78,7 @@ upload:
   mode: local
   local:
     # nginx映射本地文件路径，无域名则为 ip +端口
-    url: http://你的文件上传子域名/
+    url: http://101.35.248.127:83/
     # 本地文件存储路径
     path: /usr/local/upload/
   oss:
@@ -90,7 +90,7 @@ upload:
 
 # 网站前台域名（邮件通知用）
 website:
-  url: http://你的主域名或ip
+  url: http://101.35.248.127
 
 #第三方配置信息
 qq:

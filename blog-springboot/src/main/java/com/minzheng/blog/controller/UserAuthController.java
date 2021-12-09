@@ -114,7 +114,10 @@ public class UserAuthController {
     @ApiOperation(value = "微博登录")
     @PostMapping("/users/oauth/weibo")
     public Result<UserInfoDTO> weiboLogin(@Valid @RequestBody WeiboLoginVO weiBoLoginVO) {
-        return Result.ok(userAuthService.weiboLogin(weiBoLoginVO));
+        return Result.ok();
+        // TODO:等个人认证完成再接入
+
+//        return Result.ok(userAuthService.weiboLogin(weiBoLoginVO));
     }
 
     /**
@@ -126,7 +129,9 @@ public class UserAuthController {
     @ApiOperation(value = "qq登录")
     @PostMapping("/users/oauth/qq")
     public Result<UserInfoDTO> qqLogin(@Valid @RequestBody QQLoginVO qqLoginVO) {
-        return Result.ok(userAuthService.qqLogin(qqLoginVO));
+        return Result.ok();
+        // TODO:等个人认证完成再接入
+//        return Result.ok(userAuthService.qqLogin(qqLoginVO));
     }
 
 }
